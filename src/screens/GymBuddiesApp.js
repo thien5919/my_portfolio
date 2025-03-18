@@ -4,27 +4,27 @@ const documents = [
   {
     title: "Project Summary",
     description: "A brief overview of the GymBuddiesApp, including goals and target audience.",
-    file: "/documents/GymBuddies_Proposal.pdf"
+    file: "/documents/F24_T16_Project_Summary.docx"
   },
   {
     title: "Project Vision",
     description: "Outlines the long-term vision and core value proposition of the app.",
-    file: "/documents/GymBuddies_Vision.pdf"
+    file: "/documents/F24_T16_Project_Vision_1.0.docx"
   },
   {
     title: "Project Requirements",
     description: "Defines functional and non-functional requirements for the app.",
-    file: "/documents/GymBuddies_Requirements.pdf"
+    file: "/documents/F24_T16_High_Level_Requirements.docx"
   },
   {
     title: "Project Plan",
     description: "Details the project timeline, milestones, and resource allocation.",
-    file: "/documents/GymBuddies_Plan.pdf"
+    file: "/documents/F24_T16_ProjectPlan.docx"
   },
   {
     title: "Requirements Analysis and Design",
     description: "In-depth analysis and design specifications including use cases and architecture.",
-    file: "/documents/GymBuddies_Analysis_Design.pdf"
+    file: "/documents/F24_T16_Requirements Analysis and Design.docx"
   },
   {
     title: "Wireframes and Mockups",
