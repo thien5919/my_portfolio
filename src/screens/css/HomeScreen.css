@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* General App Styles */
+.app {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 0 20px;
+    scroll-behavior: smooth;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Header Wrap */
+  .app_header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Navbar - top right corner */
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    background-color: #222;
+    padding: 15px 25px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-}
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Welcome Section */
+  .welcome {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding-top: 80px; /* For navbar offset */
+  }
+  
+  .welcome h1 {
+    text-align: left;
+    padding-left: 20px;
+    max-width: 800px;
+  }
+  
+  /* Optional Profile Image */
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  /* About Me */
+  .About-me {
+    margin: 60px 0;
+    padding: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .About-me blockquote {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Studies Section */
+  #studies,
+  .studies {
+    background-color: #444;
+    padding: 60px 20px;
+    color: white;
+  }
+  
+  .study_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left_card,
+  .right_card {
+    flex: 1;
+    padding: 0 15px;
+    text-align: left;
+  }
+  
+  .study_card.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  
+  .study_card.reverse .left_card,
+  .study_card.reverse .right_card {
+    text-align: right;
+  }
+  
+  /* Certificates & Projects */
+  #certificates,
+  #projects {
+    margin: 60px 0;
+  }
+  
+  #certificates h1,
+  #projects h1,
+  #studies h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .welcome h1 {
+      font-size: 1.5rem;
+      padding: 0;
+      text-align: center;
+    }
+  
+    .study_card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left_card,
+    .right_card {
+      padding: 10px 0;
+    }
+  }
+  

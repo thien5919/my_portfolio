@@ -4,6 +4,7 @@ import GymBuddiesApp from './screens/GymBuddiesApp';
 import Home from './screens/HomeScreen';
 
 
+
 function App() {
     return (
         <BrowserRouter>
